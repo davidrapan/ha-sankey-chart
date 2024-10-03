@@ -580,6 +580,11 @@ export class Chart extends LitElement {
         };
       }
     }
+
+    if (entityConf.invert) {
+      entity.state = -entity.state
+    }
+
     return entity;
   }
 
